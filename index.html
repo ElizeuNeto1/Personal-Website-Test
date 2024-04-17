@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Elizeu Neto</div> 
+        <div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiência">Experiência</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contato">Contato</a></li>   
+            </ul>
+        </div>
+    </nav>
+<nav id="hamburguer-nav">
+    <div class="logo">Elizeu Neto</div>
+    <div class="hamburguer-menu">
+    <div class="hamburguer-icon" onclick="toggleMenu()">
+        <Span></Span>   
+        <Span></Span>
+        <Span></Span>
+        </div> 
+    <div class="menu-links">
+        <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experiência" onclick="toggleMenu()">Experiência</a></li>
+        <li><a href="#Projetos" onclick="toggleMenu()">Projetos</a></li>
+        <li><a href="#Contato" onclick="toggleMenu()">Contato</a></li>
+    </div>
+</div>
+</nav>
+<section id="profile">
+<div class="section__pic-container">
+    <img src="./assets/Sorrizeu.png" alt="Elizeu Neto Profile Picture">
+
+</div>
+<div class="section__text">
+<p class="section__text__p1">Olá, eu sou</p>
+<h1 class="title">Elizeu Neto</h1>
+<p class="section__text__p2">Empreendedor</p>
+<div class="btn-container">
+    <button 
+    class="btn btn-color-2"
+    onclick="window.open('./assets/Currículo-Elizeu.pdf')">
+    Currículo
+</button>
+    <button 
+    class="btn btn-color-1"
+    onclick="location.href='./#contact'">
+    Contact Info
+</button>
+</div>
+<div id="socials-container">
+    <img 
+    src="./Assets/linkedin.png" alt="My Linkedin Profile"
+    class="icon" 
+    onclick="location.href='https://www.linkedin.com/in/elizeu-oliveira-neto/'">
+    <img 
+    src="./Assets/github.png" alt="My Github Profile"
+    class="icon" 
+    onclick="location.href='https://github.com/ElizeuNeto1'">
+
+</div>
+</div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
+    
